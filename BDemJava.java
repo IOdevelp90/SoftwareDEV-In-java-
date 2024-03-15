@@ -26,7 +26,14 @@ public class BDemJava {
             
               String insertSQL = : "INSERT INTO Pessoa (nome, idade)"
               PreparedStatement preparedStatement = connection.prepareStatement()
-        }     updateStatement
+        }     PreparedStatement.setString(1,"Joao");
+              PreparedStatement.setInt(2,30);
+              PreparedStatement.executeUpdate()
+              preparedStatement.close()
+
+                  String selectSQL= "SELECT * FROM PESSOA"
+
+                  
     }
     
 }
